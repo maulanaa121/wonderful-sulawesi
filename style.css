@@ -374,6 +374,10 @@ section{
 
 @media screen and (max-width:760px){
 
+    nav ul{
+        backdrop-filter: blur(4px);
+    }
+
     .wonderful{
         flex-wrap: wrap;
     }
@@ -419,6 +423,11 @@ section{
 }
 
 @media screen and (max-width:491px){
+    
+    nav ul{
+        backdrop-filter: blur(4px);
+    }
+
     .wonderful-teks h2{
         font-size: 4.2rem;
     }
@@ -434,6 +443,10 @@ section{
 
 @media screen and (max-width:385px){
 
+    nav ul{
+        backdrop-filter: blur(4px);
+    }
+    
     .wonderful-teks h2{
         font-size: 3.7rem;
     }
@@ -454,6 +467,5 @@ section{
     .label-kanan .label-bawah{
         width: 250px;
     }
-
 
 }
