@@ -279,7 +279,7 @@ section{
 
 .label-kanan .label-bawah{
     /* margin-top: 50px; */
-    width: 350px;
+    /* width: 350px; */
     height: 65px;
     background-color: #000;
     margin: 55px auto;
@@ -437,8 +437,9 @@ section{
     }
 
     .feedback h1{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
+
 }
 
 @media screen and (max-width:385px){
@@ -456,16 +457,8 @@ section{
     }
 
     .feedback h1{
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
-    .label-kanan .label-atas{
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    .label-kanan .label-bawah{
-        width: 250px;
-    }
 
 }
