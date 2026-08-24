@@ -227,63 +227,118 @@ section{
     line-height: 37px;
 }
 
-.feedback{
-    /* background-color: salmon; */
+.feedback {
     width: 100%;
-    /* height: 100vh; */
-    margin: 50px 0;
-    /* background-color: salmon; */
+    padding: 80px 8%;
+    background: #fff;
 }
 
-.feedback h1{
-    font-family: 'Inter';
-    text-transform: uppercase;
+.feedback h1 {
+    margin-bottom: 30px;
     text-align: center;
-    /* margin: 50px 0; */
-    font-size: 3.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.feedback-container{
-    padding:10px;
+.feedback-container {
     width: 100%;
-    /* height: 100vh; */
-    /* background-color: aqua; */
+    max-width: 1180px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+/* Gambar kiri */
+.label-kiri {
+    height: 650px;
+    overflow: hidden;
+    border-radius: 55px 55px 0 0;
+}
+
+.label-kiri img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.label-kiri:hover img {
+    transform: scale(1.05);
+}
+
+/* Bagian kanan */
+.label-kanan {
     display: flex;
-    /* gap: 30px; */
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.label-kiri{
-    width: 570px;
-    height: 750px;
-    background-color: #000;
-    border-radius: 48px;
-    margin-bottom: 50px;
+/* Gambar kanan atas */
+.label-atas {
+    height: 435px;
+    overflow: hidden;
+    border-radius: 55px;
 }
 
-.label-kanan{
-    /* row-gap: 50px; */
-    width: 570px;
-    height: 750px;
-    /* background-color: #000; */
-    /* border-radius: 48px; */
-}
-
-.label-kanan .label-atas{
-    background-color: #000;
+.label-atas img {
     width: 100%;
-    height: 370px;
-    border-radius: 48px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
 }
 
-.label-kanan .label-bawah{
-    /* margin-top: 50px; */
-    /* width: 350px; */
-    height: 65px;
-    background-color: #000;
-    margin: 55px auto;
-    border-radius: 34px;
+.label-atas:hover img {
+    transform: scale(1.05);
+}
+
+/* Area button */
+.label-bawah {
+    height: 80px;
+}
+
+/* Button */
+.feedback-button {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    background: #000;
+    color: #fff;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.feedback-button i {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feedback-button:hover {
+    background: #222;
+}
+
+.feedback-button:hover i {
+    transform: translateX(8px);
 }
 
 
